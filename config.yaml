@@ -1,0 +1,155 @@
+# Git Publisher 配置文件
+
+# GitHub 配置
+github:
+  username: abcdefgjjyjj
+  token: "YOUR_GITHUB_PAT"
+
+# 工具根目录
+tools_root: "<project-root>"
+
+# staging 目录
+staging_root: "<project-root>/git-publisher/staging"
+
+# 工具注册表
+tools:
+  - name: git-publisher
+    description: "Batch sanitize and publish local tools to GitHub with auto-commit support"
+    topics:
+      - git
+      - github
+      - automation
+      - sanitization
+      - devtools
+    exclude:
+      - "__pycache__"
+      - "*.pyc"
+      - ".git"
+      - "staging"
+      - "*.log"
+      - "tools"
+  - name: auto-accept
+    description: "LLM-powered CLI permission auto-approval tool"
+    topics:
+      - automation
+      - security
+      - permission-hook
+      - llm
+    exclude:
+      - "__pycache__"
+      - "*.log"
+      - ".llm"
+      - ".git"
+      - "*.pyc"
+
+  - name: disable-autolock
+    description: "PowerShell script to completely disable Windows 10 auto-lock"
+    topics:
+      - windows
+      - powershell
+      - lock-screen
+      - registry
+      - automation
+    exclude:
+      - ".git"
+
+  - name: mpv-setup
+    description: "Portable mpv player configuration for Windows (based on VCB-Studio guide)"
+    topics:
+      - mpv
+      - video-player
+      - windows
+      - configuration
+      - media
+    exclude:
+      - ".git"
+      - "mpv/mpv.exe"
+      - "mpv/mpv.com"
+      - "mpv/d3dcompiler_43.dll"
+      - "mpv/doc"
+      - "mpv/mpv/fonts.conf"
+      - "cache"
+      - "watch_later"
+      - "mpv/portable_config/cache"
+      - "mpv/portable_config/watch_later"
+
+  - name: sub-check-collector
+    description: "Subscription link collector for V2Ray/Clash with auto-config merging"
+    topics:
+      - v2ray
+      - clash
+      - proxy
+      - subscription
+      - automation
+    exclude:
+      - ".git"
+      - ".github"
+      - "__pycache__"
+      - "*.pyc"
+      - "*.log"
+
+  - name: video-summarizer
+    description: "Local video content summarizer — extract audio locally, transcribe with Whisper, summarize via cloud LLM"
+    topics:
+      - video
+      - whisper
+      - summarization
+      - python
+      - faster-whisper
+      - llm
+    exclude:
+      - "__pycache__"
+      - "*.pyc"
+      - "*.log"
+      - ".git"
+      - "tmp"
+      - "tmp_result.md"
+      - "tmp_trans.txt"
+
+  - name: win-context-menu-powershell-admin
+    description: "Add 'Open PowerShell as Administrator' to Windows folder context menu"
+    topics:
+      - windows
+      - powershell
+      - registry
+      - context-menu
+      - admin
+    exclude:
+      - ".git"
+
+  - name: qt-install
+    description: "Qt 5.12.12 installation guide for Windows with msvc2017_64"
+    topics:
+      - qt
+      - windows
+      - cpp
+      - guide
+    exclude:
+      - ".git"
+
+  - name: home-network-upgrade
+    description: "Home network 2.5G upgrade planning — topology diagrams, budget, and device recommendations"
+    topics:
+      - networking
+      - homelab
+      - home-network
+      - nas
+      - network-plan
+    private: true
+    exclude:
+      - ".git"
+
+  - name: m2a2.0-code-analysis
+    description: "M2a2.0 Pick & Place 贴片机控制软件代码架构与业务逻辑分析"
+    topics:
+      - die-bonder
+      - pick-and-place
+      - semiconductor
+      - qt
+      - cpp
+      - code-analysis
+      - architecture
+    private: true
+    exclude:
+      - ".git"
+      - "diffs"
